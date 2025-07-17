@@ -6,6 +6,23 @@ This repository contains code and data for the 5800 Final Project
 
 ---
 
+## Project Structure
+fake-review-detection/
+├── data/
+│   ├── processed/                  # Cleaned and preprocessed datasets
+│   │   ├── hotel_final_clean.csv   # Final cleaned hotel reviews dataset
+│   │   └── product_final_clean.csv # Final cleaned product reviews dataset
+│   └── raw/                        # Original, unprocessed data files
+│       ├── dosc_hotel_reviews.csv  # Raw hotel reviews from data source
+│       └── kaggle_fake_reviews.csv # Raw fake reviews from Kaggle
+├── notebooks/                      # Jupyter notebooks for analysis and experimentation
+│   └── 01_data_exploration.ipynb   # Initial data exploration and analysis
+├── src/                           # Source code modules
+│   ├── __init__.py                # Makes src a Python package
+│   └── data_processing.py         # Data cleaning and preprocessing functions
+├── .gitignore                     # Git ignore rules
+└── README.md                      # Project documentation
+
 ## Setup Instructions
 
 ### 1. Clone the repository
