@@ -7,6 +7,7 @@ This repository contains code and data for the 5800 Final Project
 ---
 
 ## Project Structure
+```
 fake-review-detection/
 ├── data/
 │   ├── processed/                  # Cleaned and preprocessed datasets
@@ -22,6 +23,23 @@ fake-review-detection/
 │   └── data_processing.py         # Data cleaning and preprocessing functions
 ├── .gitignore                     # Git ignore rules
 └── README.md                      # Project documentation
+```
+
+## Directory Descriptions
+
+### `/data`
+Contains all datasets used in the project:
+- **`raw/`**: Original, unmodified data files as downloaded from sources
+- **`processed/`**: Cleaned and preprocessed data ready for model training
+
+### `/notebooks`
+Jupyter notebooks for exploratory data analysis, experimentation, and prototyping:
+- `01_data_exploration.ipynb`: Initial analysis of the review datasets
+
+### `/src`
+Python source code modules:
+- `data_processing.py`: Functions for data cleaning, preprocessing, and feature engineering
+- `__init__.py`: Package initialization file
 
 ## Setup Instructions
 
