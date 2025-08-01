@@ -18,9 +18,6 @@ fake-review-detection/
 │       └── kaggle_fake_reviews.csv # Raw fake reviews from Kaggle
 ├── notebooks/                      # Jupyter notebooks for analysis and experimentation
 │   └── 01_data_exploration.ipynb   # Initial data exploration and analysis
-├── src/                           # Source code modules
-│   ├── __init__.py                # Makes src a Python package
-│   └── data_processing.py         # Data cleaning and preprocessing functions
 ├── .gitignore                     # Git ignore rules
 └── README.md                      # Project documentation
 ```
@@ -35,11 +32,6 @@ Contains all datasets used in the project:
 ### `/notebooks`
 Jupyter notebooks for exploratory data analysis, experimentation, and prototyping:
 - `01_data_exploration.ipynb`: Initial analysis of the review datasets
-
-### `/src`
-Python source code modules:
-- `data_processing.py`: Functions for data cleaning, preprocessing, and feature engineering
-- `__init__.py`: Package initialization file
 
 ## Setup Instructions
 
