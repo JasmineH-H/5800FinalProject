@@ -42,7 +42,7 @@ git clone https://github.com/JasmineH-H/5800FinalProject.git
 ```
 
 ### 2. Create and activate a Python virtual environment (recommended)
-#### Using Python 3.12:
+#### Using Python 3.11:
 
 ```bash
 python3 -m venv .venv
