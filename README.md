@@ -10,28 +10,73 @@ This repository contains code and data for the 5800 Final Project
 ```
 fake-review-detection/
 ├── data/
-│   ├── processed/                  # Cleaned and preprocessed datasets
-│   │   ├── hotel_final_clean.csv   # Final cleaned hotel reviews dataset
-│   │   └── product_final_clean.csv # Final cleaned product reviews dataset
-│   └── raw/                        # Original, unprocessed data files
-│       ├── dosc_hotel_reviews.csv  # Raw hotel reviews from data source
-│       └── kaggle_fake_reviews.csv # Raw fake reviews from Kaggle
-├── notebooks/                      # Jupyter notebooks for analysis and experimentation
-│   └── 01_data_exploration.ipynb   # Initial data exploration and analysis
-├── .gitignore                     # Git ignore rules
-└── README.md                      # Project documentation
+│   ├── demo/
+│   │   └── datamit_hotel.csv           # Demo dataset for real-world application
+│   ├── original/
+│   │   ├── dosc_hotel_reviews.csv      # Raw hotel reviews from data source
+│   │   └── kaggle_fake_reviews.csv     # Raw fake reviews from Kaggle
+│   └── processed/                      # Cleaned and preprocessed datasets
+│       ├── hotel_clean.csv       # Processed cleaned-text hotel reviews dataset
+│       ├── hotel_rawn.csv       # Processed raw-text hotel reviews dataset
+│       ├── product_clean.csv     # Processed cleaned-text product reviews dataset
+│       └── product_raw.csv     # Processed raw-text product reviews dataset
+├── embeddings/
+│   ├── hotel_bert_test_embeddings.pkl  # BERT embeddings for hotel test data
+│   ├── hotel_bert_train_embeddings.pkl # BERT embeddings for hotel training data
+│   └── hotel_embeddings_meta.pkl       # Metadata for hotel embeddings (reauire download from Google drive)
+├── models/                             # Trained models and model artifacts (reauire download from Google drive)
+├── notebooks/                          # Jupyter notebooks for analysis and experimentationm 
+│   ├── 01_data_loading.ipynb           # Data loading and initial processing
+│   ├── 02_data_analysis.ipynb          # Exploratory data analysis
+│   ├── 03_product_models_with_tfidf.ipynb # Product review models with TF-IDF
+│   ├── 04_transfer_learning_with_bert.ipynb # Transfer learning using BERT
+│   ├── 05_hybrid_classification_and_embeddings.ipynb # Hybrid classification approaches
+│   ├── 06_graph_clustering_with_embeddings.ipynb # Graph-based clustering methods
+│   ├── 07_optimization_and_complexity.ipynb # Model optimization and complexity analysis
+│   └── 08_final_integration_and_evaluation.ipynb # Final model integration and evaluation
+├── results/                            # Model results and performance metrics
+│   ├── bert_confusion_matrix.png       # BERT model confusion matrix
+│   ├── bert_only_clustering.png        # BERT clustering visualization
+│   ├── complexity_and_performance_comparison.png # Performance comparison chart
+│   ├── ensemble_confusion_matrix.png   # Ensemble model confusion matrix
+│   ├── ensemble_performance_comparison.png # Ensemble performance metrics
+│   ├── graph_clustering/               # Graph clustering results (reauire download from Google drive)
+│   ├── hybrid_classification/          # Hybrid model results (reauire download from Google drive)
+│   └── transfer_learning/              # Transfer learning results (reauire download from Google drive)
+├── .gitignore                          # Git ignore rules
+└── README.md                           # Project documentation
 ```
 
 ## Directory Descriptions
 
 ### `/data`
 Contains all datasets used in the project:
-- **`raw/`**: Original, unmodified data files as downloaded from sources
+- **`original/`**: Raw, unprocessed data files as downloaded from sources
 - **`processed/`**: Cleaned and preprocessed data ready for model training
+- **`demo/`**:  Sample datasets for testing and demonstration
+
+### `/embeddings`
+Stores pre-computed embeddings for efficient model training:
+- BERT embeddings for hotel reviews (training and test sets)
+- Metadata and configuration files for embeddings
+
+### `/models`
+Houses trained machine learning models and related artifacts
 
 ### `/notebooks`
-Jupyter notebooks for exploratory data analysis, experimentation, and prototyping:
-- `01_data_exploration.ipynb`: Initial analysis of the review datasets
+Jupyter notebooks organized by project phases:
+1. Data Loading & Preprocessing (01-02)
+2. Model Development (03-05)
+3. Advanced Techniques (06-07)
+4. Final Integration (08)
+
+### `/results`
+Organized storage for all experimental results:
+
+- Confusion matrices and performance visualizations
+- Clustering analysis results
+- Model comparison charts
+- Phase-wise result summaries
 
 ## Setup Instructions
 

@@ -186,7 +186,6 @@ $RECYCLE.BIN/
 
 # ML/Data Science specific
 # Data files
-*.csv
 *.json
 *.parquet
 *.pkl
